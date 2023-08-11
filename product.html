@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Online Shop</title>
+    <link href="src/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li class="fl-r">
+                    <a href="basket.html"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <section id="product">
+                <div class="left-box">
+                    <img id="product-image" class="product-image" src="src/images/shoes1.jpeg" />
+                </div>
+                <div class="right-box">
+                    <h2 id="product-title" class="center section-title">Fresh fowm X 860v12</h2>
+                    <span id="product-price" class="product-price">$134.99</span>
+                    <br />
+                    <span id="product-category" class="product-category">Man's Running </span>
+                    <br />
+                    <p id="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ipsam!
+                        Qui minus alias delectus
+                        corporis repellat sapiente quod, earum doloremque libero quasi, tenetur aperiam nisi facere
+                        expedita illo harum dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                        magni amet deleniti accusantium a quo, dolorum inventore cumque sint placeat culpa facilis animi
+                        odit numquam accusamus tempore reiciendis suscipit laborum ab assumenda praesentium error nam
+                        qui? Quidem at quis ea nihil fugit quaerat quasi aperiam dolores id rem, labore necessitatibus
+                        quibusdam exercitationem ipsa molestias ab error? Cupiditate dolores ab ea? Reprehenderit earum
+                        voluptatum voluptate fuga porro optio aliquid consequuntur? Dolorum repellendus commodi
+                        excepturi quos earum at fuga eligendi sapiente assumenda, autem iure adipisci rerum consequuntur
+                        animi repudiandae, repellat rem qui? Velit quod quas autem dicta odit ex porro. Fugiat,
+                        asperiores possimus harum sed magni, in at animi necessitatibus iste atque, cum deleniti illum
+                        reiciendis saepe neque iusto soluta blanditiis culpa? </p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <a class="btn" onclick="addToBasket()">Add to Card</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+    <br />
+    <footer>
+        <span>New Balance family of brands </span>
+        <img src="src/images/warror.svg">
+        <img src="src/images/teamsports-logo.svg">
+        <img src="src/images/brine-logo.svg">
+    </footer>
+
+
+    <script src="utils/cookies.js"></script>
+    <script src="models/Product.js"></script>
+    <script src="models/Basket.js"></script>
+    <script src="handlers/ProductHandler.js"></script>
+    <script src="db/ProductDB.js"></script>
+    <script src="db/BasketDB.js"></script>
+    <script src="src/main.js"></script>
+    <script src="controllers/productCtrl.js"></script>
+</body>
+
+</html>
